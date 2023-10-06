@@ -1,0 +1,219 @@
+<ion-content [fullscreen]="true">
+
+  <div class="gradient">
+    <h1><u> Olá, Marcela</u></h1>
+  </div>
+  <div class="text-box">
+
+    <div class="info-box">
+      <h2>R$129</h2>
+      <p>Semanal</p>
+    </div>
+
+
+    <div class="info-box">
+      <h2>R$232</h2>
+      <p>Mensal</p>
+    </div>
+
+
+    <div class="info-box">
+      <h2>R$458</h2>
+      <p>Anual</p>
+    </div>
+
+  </div>
+
+
+
+  <div class="lembrete-titulo" routerLink="../lembretes">
+    <h2>Lembretes</h2>
+    <ion-icon class="icone-arrow" name="caret-forward-outline"></ion-icon>
+  </div>
+
+
+  <div class="box-center-content">
+
+    <div class="box-lembretes">
+
+      <div class="lembretes">
+        <div class="backgroundlogo">
+          <ion-icon name="bookmarks">
+          </ion-icon>
+        </div>
+        <p>Amendoim expira amanhã!</p>
+      </div>
+
+      <div class="lembretes">
+        <div class="backgroundlogo">
+          <ion-icon name="bookmarks">
+          </ion-icon>
+        </div>
+        <p>Você cumpriu uma meta!</p>
+      </div>
+
+      <div class="lembretes">
+        <div class="backgroundlogo">
+          <ion-icon name="bookmarks">
+          </ion-icon>
+        </div>
+        <p>Um evento está próximo.</p>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+  <div class="estatisticas-titulo" routerLink="../estatisticas">
+    <h2>Estatísticas</h2>
+    <ion-icon class="icone-arrow" name="caret-forward-outline"></ion-icon>
+  </div>
+
+  <div class="estat">
+
+
+    <div class="box-estat">
+
+      <div class="graficoredondo"></div>
+
+      <div class="flex-estat">
+
+
+        <div class="legenda-estat">
+          <div class="legenda-color"></div>
+          <div class="legenda-text">Legenda</div>
+        </div>
+
+        <div class="legenda-estat">
+          <div class="legenda-color"></div>
+          <div class="legenda-text">Legenda</div>
+        </div>
+
+        <div class="legenda-estat">
+          <div class="legenda-color"></div>
+          <div class="legenda-text">Legenda</div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <div class="vender-titulo">
+    <h2>Vender</h2>
+    <ion-icon class="icone-arrow" name="caret-forward-outline"></ion-icon>
+  </div>
+
+  <div class="box-center-content">
+
+    <div class="box-vender">
+
+      <div class="lembretes">
+        <div class="backgroundvender azul">
+          <p>60</p>
+        </div>
+        <div class="precoeproduto">
+          <p>Hamburguer</p>
+          <p>R$14,90</p>
+        </div>
+      </div>
+
+      <div class="lembretes">
+        <div class="backgroundvender amarelo">
+          <p>10</p>
+        </div>
+        <div class="precoeproduto">
+          <p>Batata</p>
+          <p>R$5,00</p>
+        </div>
+      </div>
+
+      <div class="lembretes">
+        <!-- adiconar dentro da classe background vender pra mudar a cor -->
+        <div class="backgroundvender vermelho">
+          <p>5</p>
+        </div>
+        <div class="precoeproduto">
+          <p>Pão</p>
+          <p>R$2,00</p>
+        </div>
+      </div>
+
+      <button class="lembretes" routerLink="../listaprod">
+        <div class="backgroundadd">
+          <ion-icon name="add-outline">
+          </ion-icon>
+        </div>
+        <p>Adicionar produto</p>
+      </button>
+
+
+    </div>
+
+  </div>
+
+</ion-content>
+
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <div class="a">
+
+        <ion-title>Ajustes</ion-title>
+        <ion-menu-toggle>
+          <ion-icon name="close"></ion-icon>
+        </ion-menu-toggle>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+    <div class="ajustes-single">
+      <p>Detalhes da conta</p>
+    </div>
+    <div class="ajustes-single">
+      <p>Privacidade</p>
+    </div>
+    <div class="ajustes-single" style="color: red;" id="present-alert">
+      <p>Sair da conta</p>
+    </div>
+
+    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons"></ion-alert>
+
+  </ion-content>
+</ion-menu>
+<!-- footer -->
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button>
+    <ion-icon name="receipt-outline"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <ion-icon name="stats-chart-outline" routerLink="../estatisticas" class=""></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <ion-icon name="home-outline" routerLink="../inicio" class="selected"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <ion-icon routerLink="../produtos" name="cube-outline" class=""></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <div class="" id="main-content">
+      <ion-buttons>
+        <ion-menu-button>
+          <ion-icon name="settings-outline" style="color: rgb(75, 75, 75);"></ion-icon>
+        </ion-menu-button>
+      </ion-buttons>
+    </div>
+
+  </ion-tab-button>
+
+</ion-tab-bar>
+

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  --ion-background-color: #f4f4f4;
+  --ion-font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --bom: green;
+  --medio: yellow;
+  --ruim: red;
+}
+
+.md body {
+  --ion-background-color: #f4f4f4;
+}

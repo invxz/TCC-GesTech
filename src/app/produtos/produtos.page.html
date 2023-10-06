@@ -1,0 +1,244 @@
+<ion-content [fullscreen]="true">
+  <div class="gradient">
+    <h1><u>Produtos</u></h1>
+  </div>
+
+  <div class="card-produtos">
+    <div class="cards">
+      <h1>Hamburguer</h1>
+
+      <div class="card-text-dentro">
+        <p>Quantidade:</p>
+        <p class="background">20</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Preço:</p>
+        <p class="background">R$ 20,00</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Validade:</p>
+        <p class="background">20/12</p>
+      </div>
+
+      <button class="editar" routerLink="../prodselect">Editar</button>
+    </div>
+    <div class="cards">
+      <h1>Abacaxi</h1>
+
+      <div class="card-text-dentro">
+        <p>Quantidade:</p>
+        <p class="background">12</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Preço:</p>
+        <p class="background">R$ 20,00</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Validade:</p>
+        <p class="background">20/12</p>
+      </div>
+
+      <button class="editar" routerLink="../prodselect">Editar</button>
+    </div>
+    <div class="cards">
+      <h1>Salsichas</h1>
+
+      <div class="card-text-dentro">
+        <p>Quantidade:</p>
+        <p class="background">60</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Preço:</p>
+        <p class="background">R$ 20,00</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Validade:</p>
+        <p class="background">20/12</p>
+      </div>
+
+      <button class="editar" routerLink="../prodselect">Editar</button>
+    </div>
+    <div class="cards">
+      <h1>Batatas fritas</h1>
+
+      <div class="card-text-dentro">
+        <p>Quantidade:</p>
+        <p class="background">60</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Preço:</p>
+        <p class="background">R$ 20,00</p>
+      </div>
+      <div class="card-text-dentro">
+        <p>Validade:</p>
+        <p class="background">20/12</p>
+      </div>
+
+      <button class="editar">Editar</button>
+    </div>
+  </div>
+
+
+  <!-- Gráfico dos produtos mais vendidos -->
+
+  <div class="titulos">
+    <h1>Produtos mais vendidos</h1>
+  </div>
+
+
+
+  <div class="graficos">
+
+    <div class="weee">
+
+      <h1>Coca-Cola</h1>
+
+      <div class="graf" style="height: 110px; background-color: #3282CC;">
+        <p>50 vendas</p>
+      </div>
+    </div>
+
+    <div class="weee">
+
+      <h1>Hamburguer</h1>
+
+      <div class="graf" style="height: 180px; background-color: #39A0FF;">
+        <p>70 vendas</p>
+      </div>
+    </div>
+
+
+    <div class="weee">
+
+
+      <h1>Batata M</h1>
+
+      <div class="graf" style="height: 75px; background-color: #1D5992;">
+        <p>30 vendas</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <div class="titulos">
+    <h1>Estoque</h1>
+  </div>
+
+
+  <!-- Estoque -->
+
+
+
+  <ion-list [inset]="true">
+
+
+    <div class="titulo-prod">
+
+
+      <div class="estoques">
+        <p class="titulo-estoques">Produtos <br> no estoque</p>
+        <div class="produtos">
+          <p>Hamburguer</p>
+          <p>Alface</p>
+          <p>Abacaxi do sul da africa</p>
+          <p>X - Salada</p>
+        </div>
+      </div>
+
+
+      <div class="estoques">
+        <p class="titulo-estoques">Quantidade <br> atual</p>
+        <div class="produtos">
+          <p>60</p>
+          <p>23</p>
+          <p>53</p>
+          <p>20</p>
+        </div>
+      </div>
+
+      <div class="estoques">
+        <p class="titulo-estoques">Estoque <br> máximo</p>
+        <div class="produtos">
+          <p>70</p>
+          <p>70</p>
+          <p>80</p>
+          <p>25</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <hr style="color: black;">
+
+
+
+  </ion-list>
+
+</ion-content>
+
+
+<ion-menu side="end" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <div class="a">
+
+        <ion-title>Ajustes</ion-title>
+        <ion-menu-toggle>
+          <ion-icon name="close"></ion-icon>
+        </ion-menu-toggle>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+
+    <div class="ajustes-single">
+      <p>Detalhes da conta</p>
+    </div>
+    <div class="ajustes-single">
+      <p>Privacidade</p>
+    </div>
+    <div class="ajustes-single" style="color: red;" id="present-alert">
+      <p>Sair da conta</p>
+    </div>
+
+    <ion-alert trigger="present-alert" class="custom-alert" header="Deseja sair da conta?" [buttons]="alertButtons"></ion-alert>
+
+  </ion-content>
+</ion-menu>
+<!-- footer -->
+
+<ion-tab-bar slot="bottom">
+  <ion-tab-button>
+    <ion-icon name="receipt-outline"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <ion-icon name="stats-chart-outline" routerLink="../estatisticas" class=""></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <ion-icon name="home-outline" routerLink="../inicio" class=""></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <ion-icon routerLink="../produtos" name="cube-outline" class="selected"></ion-icon>
+  </ion-tab-button>
+
+  <ion-tab-button>
+    <div class="" id="main-content">
+      <ion-buttons>
+        <ion-menu-button>
+          <ion-icon name="settings-outline" style="color: rgb(75, 75, 75);"></ion-icon>
+        </ion-menu-button>
+      </ion-buttons>
+    </div>
+
+  </ion-tab-button>
+
+</ion-tab-bar>
+
