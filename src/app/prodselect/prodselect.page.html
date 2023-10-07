@@ -31,15 +31,45 @@
 
 <div class="titulo">Preço de produção:</div>
 <div class="center">
-  <input type="text" class="box-edit" placeholder="Valor de produção (opcional)">
+  <input type="number" class="box-edit" placeholder="Valor de produção (opcional)">
 </div>
 
 
 <div class="titulo">Itens usados:</div>
-<div class="center">
-<div class="box-edit"></div>
-</div>
 
+ <!-- <ion-list>
+    <ion-select aria-label="Fruit" placeholder="Selecione os itens usados (opcional)" [multiple]="true">
+      <ion-select-option value="apples">Apples</ion-select-option>
+      <ion-select-option value="oranges">Oranges</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+      <ion-select-option value="bananas">Bananas</ion-select-option>
+    </ion-select>
+</ion-list>  -->
+
+<ion-list>
+
+  <ion-select aria-label="Itens usados" toggleIcon="caret-down-outline" placeholder="Selecione os itens usados (opcional)" [multiple]="true">
+    <ion-select-option>Pão</ion-select-option>
+    <ion-select-option>Alface</ion-select-option>
+    <ion-select-option>Batata frita</ion-select-option>
+    <ion-select-option>Refrigerante</ion-select-option>
+    <ion-select-option>Suco</ion-select-option>
+    <ion-select-option>Abacaxi</ion-select-option>
+    <ion-select-option>Açai</ion-select-option>
+  </ion-select>
+
+</ion-list>
 
 </ion-content>
 
